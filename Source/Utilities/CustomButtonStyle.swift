@@ -25,11 +25,10 @@ struct CustomButtonStyle: ButtonStyle {
     }
     
     func makeBody(configuration: ButtonStyleConfiguration) -> some View {
-
         configuration.label
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
-            .foregroundColor(.white)
-            .background(Color("PrimaryDark"))
+            .foregroundColor(Color(UIColor.label)) // Adaptive text color
+            .background(Color(UIColor { $0.userInterfaceStyle == .dark ? .gray : UIColor(named: "PrimaryDark")! }))
             .scaleEffect(configuration.isPressed ? 0.9 : 1.0)
             .opacity(self.disabled ? 0.5 : 1.0)
             .cornerRadius(8)
