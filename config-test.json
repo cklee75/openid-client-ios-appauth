@@ -1,0 +1,7 @@
+{
+  "issuer": "https://app.please-open.it/auth/realms/ee1afd72-71a9-49ad-a975-54ed46cc56a3",
+  "clientID": "public-client",
+  "redirectUri": "io.curity.client:/callback",
+  "postLogoutRedirectUri": "io.curity.client:/logoutcallback",
+  "scope": "openid profile"
+}

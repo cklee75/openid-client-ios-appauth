@@ -1,0 +1,7 @@
+{
+  "issuer": "https://sso.digital-id.my/realms/didtest",
+  "clientID": "public-client-myid-sso",
+  "redirectUri": "io.curity.client:/callback",
+  "postLogoutRedirectUri": "io.curity.client:/logoutcallback",
+  "scope": "openid profile"
+}
